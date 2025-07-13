@@ -45,7 +45,7 @@
                 <tab heading="Photos" #photoTab="tab">
                     @if (photoTab.active) {
                         <gallery 
-                            [items]="images" 
+                            [items]="images" [thumbs]="true" [nav]="true" [counter]="true"
                             class="gallery"
                         ></gallery>
                     }
